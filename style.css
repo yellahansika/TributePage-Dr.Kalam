@@ -1,0 +1,276 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1f2937;
+  background-color: #f7fafc;
+  line-height: 1.7;
+  font-feature-settings: "kern" 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  scroll-snap-type: y proximity;
+  overscroll-behavior-y: contain;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header {
+  background: linear-gradient(135deg, #102a43 0%, #1f4287 100%);
+  color: #f8fafc;
+  padding: 2rem 1.5rem;
+}
+
+.header-content {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  letter-spacing: -0.03em;
+}
+
+.subtext {
+  margin: 0.75rem 0 0;
+  max-width: 34rem;
+  color: #e2e8f0;
+  font-size: 1rem;
+}
+
+.header-chip {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.page-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.hero-card,
+.content-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-card {
+  scroll-snap-align: start;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 24px;
+  display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.hero-copy h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+  color: #0f172a;
+}
+
+.hero-copy p {
+  margin: 1rem 0 1.2rem;
+  color: #475569;
+  font-size: 1rem;
+}
+
+blockquote {
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid #fb923c;
+  background: #fffbeb;
+  color: #92400e;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  border-radius: 18px;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0 1.5rem;
+  background: #0f172a;
+  color: #f8fafc;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background: #1e293b;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.15);
+}
+
+.content-card {
+  padding: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.content-card h2 {
+  margin-top: 0;
+  color: #0f172a;
+  font-size: 1.6rem;
+}
+
+.content-card p {
+  margin: 1rem 0;
+  color: #475569;
+}
+
+.bio-section,
+.achievements-section,
+.interactive-section,
+.hero-card,
+.achievement-grid article {
+  scroll-snap-align: start;
+}
+
+.achievement-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.5rem;
+}
+
+.achievement-grid article {
+  padding: 1.5rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+}
+
+.achievement-grid h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.achievement-list {
+  margin: 1.75rem 0 0;
+  padding-left: 1.2rem;
+  color: #475569;
+}
+
+.achievement-list li {
+  margin-bottom: 0.8rem;
+}
+
+.interactive-section button {
+  margin-top: 1rem;
+}
+
+.fact-output {
+  margin-top: 1rem;
+  color: #334155;
+  font-size: 1rem;
+  min-height: 2.2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.75rem 1.5rem;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 840px) {
+  .hero-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-copy {
+    align-self: center;
+  }
+
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .page-wrapper {
+    padding: 1.25rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-chip {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content-card,
+  .hero-card {
+    padding: 1.5rem;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+}

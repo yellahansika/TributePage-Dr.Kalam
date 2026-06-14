@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tribute to Dr. A.P.J. Abdul Kalam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div>
+        <p class="eyebrow">Tribute Page</p>
+        <h1>Dr. A.P.J. Abdul Kalam</h1>
+        <p class="subtext">1931 - 2015 | President of India | Aerospace Scientist | Teacher of the Nation</p>
+      </div>
+      <div class="header-chip">Inspiration for millions</div>
+    </div>
+  </header>
+
+  <main class="page-wrapper">
+    <section class="hero-card reveal">
+      <div class="hero-image">
+        <img src="dr.kalam.png" alt="Dr. APJ Abdul Kalam">
+      </div>
+      <div class="hero-copy">
+        <h2>Visionary Leader</h2>
+        <p>Dr. A.P.J. Abdul Kalam dedicated his life to science, innovation, and empowering youth across India and the world.</p>
+        <blockquote>
+          “Dream, dream, dream. Dreams transform into thoughts and thoughts result in action.”
+        </blockquote>
+        <button onclick="toggleQuote()">Show Another Quote</button>
+      </div>
+    </section>
+
+    <section id="bio" class="bio-section content-card reveal">
+      <h2>Biography</h2>
+      <p>Born in Rameswaram, Dr. Kalam rose from humble beginnings to become one of India's most beloved leaders. He studied physics and aerospace engineering, then joined the Defense Research and Development Organisation (DRDO) and the Indian Space Research Organisation (ISRO).</p>
+      <p>He was the chief architect of India's civilian space program and military missile systems, including the Agni and Prithvi missiles. In 2002, he became the 11th President of India, earning admiration for his humility, discipline, and dedication to education.</p>
+      <p>Beyond science, Dr. Kalam believed in the power of dreams, the importance of youth, and the promise of a developed India built through creativity, hard work, and values.</p>
+    </section>
+
+    <section id="achievements" class="achievements-section content-card reveal">
+      <h2>Major Achievements</h2>
+      <div class="achievement-grid">
+        <article class="reveal">
+          <h3>Missile Program</h3>
+          <p>Played a central role in developing India's strategic missile program, earning the title "Missile Man of India." </p>
+        </article>
+        <article class="reveal">
+          <h3>Pokhran-II</h3>
+          <p>Led the successful 1998 nuclear tests that established India as a responsible nuclear power.</p>
+        </article>
+        <article class="reveal">
+          <h3>Presidential Service</h3>
+          <p>Served as the 11th President of India from 2002 to 2007, remaining a voice for youth and education.</p>
+        </article>
+        <article class="reveal">
+          <h3>Books & Ideas</h3>
+          <p>Authored inspirational works like "Wings of Fire," "Ignited Minds," and "India 2020."</p>
+        </article>
+      </div>
+      <ul class="achievement-list">
+        <li>Bharat Ratna recipient (1997)</li>
+        <li>Padma Vibhushan (1990) and Padma Bhushan (1981)</li>
+        <li>Started PURA to connect rural India with urban amenities</li>
+        <li>Spent his later years teaching and motivating students nationwide</li>
+      </ul>
+    </section>
+
+    <section id="insight" class="interactive-section content-card reveal">
+      <h2>Interactive Insight</h2>
+      <p>Click the button below to reveal a thoughtful fact about Dr. Kalam's journey.</p>
+      <button onclick="showFact()">Show Fact</button>
+      <p id="fact" class="fact-output"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by Hansika | A polished tribute to Dr. A.P.J. Abdul Kalam</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
