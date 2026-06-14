@@ -6,8 +6,7 @@ This project showcases his biography, achievements, inspirational quotes, and fu
 ---
 
 ## 🌐 Live Demo
-[View Tribute Page](https://yellahansika.github.io/tribute-apj-kalam)  
-*(Replace with your actual GitHub Pages link once published)*
+[View Tribute Page]https://github.com/yellahansika/TributePage-Dr.Kalam
 
 ---
 
